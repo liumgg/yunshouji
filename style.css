@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #42bd56;
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    background: #f6f6f6;
+    color: #111111;
+    /* 默认字体16px */
+    font-size: 12px;
+    font-family: sans-serif;
+    position: relative;
+}
+/* ios 导航45px */
+.page{
+    max-width: 650px;
+    padding-top: 47px;
+    background: #ffffff;
+    margin: 0 auto;
+    /* 禁止左右滚动 水平不要出现滚动条 */
+    overflow-x: hidden;
+}
+.TalionNav{
+    /* 相对于窗口定位 */
+    position: fixed;
+    /* 把子元素的左边缘 设置在其 父元素左边缘 向右移动 父元素50%长度 的位置*/
+    left: 50%;
+    right: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 18px;
+    z-index: 9999;
+    max-width: 650px;
+    /* 告诉浏览器去理解你设置的边框和内边距的值是包含在width内的 */
+    box-sizing: border-box;
+    /* 把子元素的左边缘 相对自身左移 自身50%长度 的位置*/
+    transform: translateX(-50%);
+}
+.TalionNav-primary{
+    border-bottom: 1px solid #f3f3f3;
+    height: 47px;
+    box-sizing: border-box;
+    /* 弹性布局 */
+    display: flex;
+    /* 子元素之间自动填充空白 */
+    justify-content: space-between;
+    /* 子元素垂直居中 */
+    align-items: center;
+}
+.TalionNav-primary>a{
+    /* font-size: 0; */
+    font-size: .8em;
+}
+.TalionNav-primary h1{
+    margin: 0;
+    padding: 0;
+    /* font-size: 0; */
+    width: 46px;
+    height: 22px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAABCCAMAAACPbq+uAAAAnFBMV…mRlirG5moZpYBepmgxpObXZB7fKE2U0dk2iKUZWLzZ/gNSiqwo673zaAAAAABJRU5ErkJggg==) no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+.TalionNav-primary nav li {
+    display: inline-block;
+    color: #42bd56;
+    font-size: 15px;
+    margin-right: 19px;
+}
+.card{
+    margin: 0 auto;
+}
+.quick-nav{
+    overflow: hidden;
+    margin: 20px 0 0 0;
+    padding-top: 6px;
+}
+.quick-nav>li{
+    float: left;
+    width: 50%;
+    padding: 3px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.quick-nav>li>a{
+    background-color: #f6f6f6;
+    color: #494949;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    padding: 12px 0;
+    border-radius: 2px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
