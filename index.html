@@ -6,35 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
-    <title>豆瓣</title>
+    <title>云收集_home</title>
 </head>
 
 <body>
+    <!--导航栏-->
     <div id="TaionNav">
         <!-- 语义化 比div 更传达标题 -->
         <header class="TalionNav">
             <div class="TalionNav-primary">
-                <a href="/">
-                    <h1>豆瓣</h1>
-                </a>
                 <nav>
                     <ul>
-                        <li><a href="#">电影</a></li>
-                        <li><a href="#">图书</a></li>
-                        <li><a href="#">广播</a></li>
-                        <li><a href="#">小组</a></li>
+                        <input type="text" name="s" class="text" placeholder="搜索云收集项目" />
+                        <button type="button" onclick="javascript:doSearch();" class="submit">搜索</button>
+                        <li><a href="#">
+                            <img src="images/mail.svg" width="40" height="30">
+                        </a></li>
                     </ul>
                 </nav>
             </div>
         </header>
     </div>
-    <div class="page">
+    <!--首页热门活动列表展示手风琴-->
+    <div class='right'>
+        <div class='app'>
+            <div class='app_inner'>
+                <input checked='' id='tab-1' name='buttons' type='radio'>
+                <label for='tab-1'>
+                    <div class='app_inner__tab'>
+                        <h2>
+                            <i class='icon ion-android-alarm-clock'></i>
+                            活动
+                        </h2>
+                        <div class='tab_left'>
+                            <i class='big icon ion-android-color-palette'></i>
+                            <div class='tab_left__image'>
+                                <i class='icon ion-android-color-palette'></i>
+                            </div>
+                        </div>
+                        <div class='tab_right'>
+                            <h3>活动时间：</h3>
+                            <h4>活动地点：</h4>
+                            <p>活动标题</p>
+                            <button>More information</button>
+                        </div>
+                    </div>
+                </label>
+                <input false='' id='tab-2' name='buttons' type='radio'>
+                <label for='tab-2'>
+                    <div class='app_inner__tab'>
+                        <h2>
+                            <i class='icon ion-android-alarm-clock'></i>
+                            投票
+                        </h2>
+                        <div class='tab_left'>
+                            <i class='big icon ion-music-note'></i>
+                            <div class='tab_left__image'>
+                                <i class='icon ion-music-note'></i>
+                            </div>
+                        </div>
+                        <div class='tab_right'>
+                            <h3>截止时间：</h3>
+                            <h4>投票类别：</h4>
+                            <p>投票标题</p>
+                            <button>More information</button>
+                        </div>
+                    </div>
+                </label>
+                <input false='' id='tab-3' name='buttons' type='radio'>
+                <label for='tab-3'>
+                    <div class='app_inner__tab'>
+                        <h2>
+                            <i class='icon ion-android-alarm-clock'></i>
+                            问卷
+                        </h2>
+                        <div class='tab_left'>
+                            <i class='big icon ion-android-microphone'></i>
+                            <div class='tab_left__image'>
+                                <i class='icon ion-android-microphone'></i>
+                            </div>
+                        </div>
+                        <div class='tab_right'>
+                            <h3>截止时间：</h3>
+                            <h4>问卷类别</h4>
+                            <p>问卷标题</p>
+                            <button>More information</button>
+                        </div>
+                    </div>
+                </label>
+                <input false='' id='tab-4' name='buttons' type='radio'>
+                <label for='tab-4'>
+                    <div class='app_inner__tab'>
+                        <h2>
+                            <i class='icon ion-android-alarm-clock'></i>
+                            活动
+                        </h2>
+                        <div class='tab_left'>
+                            <i class='big icon ion-android-bar'></i>
+                            <div class='tab_left__image'>
+                                <i class='icon ion-android-bar'></i>
+                            </div>
+                        </div>
+                        <div class='tab_right'>
+                            <h3>截止时间：</h3>
+                            <h4>活动类别：</h4>
+                            <p>活动标题</p>
+                            <button>More information</button>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <!--底部菜单-->
+    <div class="menu">
         <div class="card">
             <ul class="quick-nav">
-                <li><a href="">影院热映</a></li>
-                <li><a href="">最受关注图书</a></li>
-                <li><a href="">豆瓣时间</a></li>
-                <li><a href="">使用豆瓣App</a></li>
+                <li><a href=""><img src="images/home.svg" width="40" height="30"></a></li>
+                <li><a href=""><img src="images/submit.svg" width="40" height="30"></a></li>
+                <li><a href=""><img src="images/me.svg" width="40" height="30"></a></li>
             </ul>
         </div>
     </div>
